@@ -11,8 +11,8 @@ namespace task03
             int n = int.Parse(Console.ReadLine());
 
             var number1 = n / 100;
-            var number3 = n % 10;
-            var number2 = (n/10) % 10;
+            var number2 = (n/10) % 10
+            var number3 = n % 10
 
             int x = number2 * 100 + number1 * 10 + number3; 
 
