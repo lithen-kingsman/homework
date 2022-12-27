@@ -14,18 +14,13 @@ namespace task04
             try
             {
                x = double.Parse(Console.ReadLine());
-                
-            }
+             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
             
-            var firstsummand = x * x;
-            var secondsummand = Math.Sqrt(x*x + 1/(x*x));
-            var summ = firstsummand + secondsummand;
-
-            var y = Math.Sqrt(summ);
+           var y = Math.Sqrt(x * x + Math.Sqrt(x * x + 1 / (x * x)));
 
             Console.WriteLine("Значение значение функции y = f(x) равно:" + y);
 
